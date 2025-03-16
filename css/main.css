@@ -113,11 +113,11 @@ section .subtitulo{
 /* Tablet */
 @media (max-width: 1500px) {
     
-    main > #main-info{
+    main #main-info{
         flex-direction: column;
         gap: 20px;  
     }
-    main > #main-info section{
+    main #main-info section{
         border: 2px solid black;
         padding: 15px;
     }
