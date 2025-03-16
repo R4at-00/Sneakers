@@ -60,7 +60,7 @@ header{
     opacity: 1;
     cursor: pointer;
 }
-.orangeText{
+header .orangeText{
     color: var(--header-orange);
     font-weight: lighter;
 }
