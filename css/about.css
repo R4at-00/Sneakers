@@ -24,6 +24,7 @@ para que se ajuste al contenido de la página */
 }
 .orangeText{
     font-weight: 300;
+    color: var(--header-orange);
 }
 
 /* Contenemos la información principal de la página en about-text */
@@ -86,6 +87,12 @@ para que se ajuste al contenido de la página */
     border-radius: 30px;
     filter: grayscale(1);
     z-index: 9;
+}
+.info .icon{
+    transition: none;
+}
+.info .logo-container:hover .icon{
+    opacity: 1;
 }
 
 .icons-container .icon:hover > img{
