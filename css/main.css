@@ -82,6 +82,9 @@ section .subtitulo{
     cursor: pointer;
     margin: 10px;
 }
+.orangeText{
+    color: var(--header-orange);
+}
 
 #main-info{
     display: flex;
