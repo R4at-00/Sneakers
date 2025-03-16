@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="../img/Logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="../js/main.js"></script>
+    <audio id="musica" loop>
+        <source src="../audio/Main.wav" type="audio/wav">
+        <source src="../audio/Main.mp3" type="audio/mp3">
+    </audio>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-container">
+                <div class="icon">
+                    <img src="../img/Logo.png">
+                </div>
+                <div class="play" onclick="playpause()">
+                    <img src="../svg/playpause.svg">
+                </div>
+            </div>
+            <h1><strong>ALL</strong><span class="orangeText">SHOES</span></h1>
+        </div>
+        <nav>
+            <a href="../html/main.html">
+                INICIO
+            </a>
+            
+            <a href="../html/shop.html">
+                TIENDA
+            </a>
+            <a href="../html/about.html">
+                NOSOTROS
+            </a>
+            <a href="#">
+                CONTACTO
+            </a>
+        </nav>
+        </div>
+        <div class="access">
+            <a class="accessButton login orangeText">
+                <img src="../svg/login.svg">
+                Login
+            </a>
+            <a class="accessButton register orangeText">
+                <img src="../svg/register.svg">
+                Register
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="info">
+            <h1>
+                <p>CONTACTO</p>
+            </h1>
+            <div class="info-container">
+                <div id="about-text">
+                    <h2 class="titulo">¿TIENES ALGUNA DUDA?</h3>
+                    <p class="subtitulo"><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nihil?</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sit hic excepturi minima omnis odio odit quam modi, 
+                        fugiat ut vitae voluptate? Dolorum ullam cumque architecto nihil voluptate voluptatum est sunt voluptas accusamus 
+                        quas iste itaque praesentium officiis, excepturi sapiente.</p>
+                    <h3 class="subrayado" id="email">E-Mail</h3>
+                    <a href="mailto:info@allshoes.es" class="email-box">
+                        <img src="../svg/mail.svg">
+                        <p>info@allshoes.es</p>
+                    </a>
+                    <h3 class="subrayado">Redes Sociales</h3>
+                    <div class="social-container">
+                        <a href="#"id="twitter">
+                            <img src="../img/contacto/old-twitter-icon.webp">
+                        </a>
+                        <a href="#"id="instagram">
+                            <img src="../img/contacto/Instagram-icon.png">
+                        </a>
+                        <a href="#"id="facebook">
+                            <img src="../img/contacto/Facebook-icon.png">
+                        </a>
+                        <a href="#"id="telegram">
+                            <img src="../img/contacto/telegram-icon.webp">
+                        </a>
+                        <a href="#"id="whatsapp">
+                            <img src="../img/contacto/whatsapp-icon.png">
+                        </a>
+                        <a href="#"id="logo">
+                            <img src="../img/Logo.png">
+                        </a>
+                    </div>
+                </div>
+                <form name="contact" action="https://script.google.com/macros/s/AKfycbzw1qgIKMXez-gpXzeczYHO2qF-Hcks-LICwcbtnb5l_UqpMfPs4F6nEPmWj4I5MEz8/exec" method="post" id="formulario-contacto">
+                    <input type="text" name="name" placeholder="Nombre" minlength="2" required>
+                    <input type="email" name="email" placeholder="E-Mail (direccions@email.com)" pattern="[A-Za-z0-9]+@[A-Za-z0-9]+\..+" required>
+                    <input type="tel" name="number" placeholder="Teléfono (XXX-XXX-XXX)" 
+                    pattern="(([0-9]{3}-[0-9]{3}-[0-9]{3})|([0-9]{3}[0-9]{3}[0-9]{3})|([0-9]{3} [0-9]{3} [0-9]{3}))" required>
+                    <select name="tema" required>
+                        <option value="" selected="selected" hidden>TEMA</option>
+                        <option value="Problemas técnicos">Problemas técnicos</option>
+                        <option value="Consulta del catálogo">Consulta del catálogo</option>
+                        <option value="Reclamación/Denuncia">Reclamación/Denuncia</option>
+                        <option value="Propuesta financiera">Propuesta financiera</option>
+                    </select>
+                    <textarea name="desc"rows="15" cols="5" id="" placeholder="Mensaje" minlength="1" required></textarea>
+                    <label>
+                        <input type="checkbox" name="terms" id="terms" required/>
+                        <strong>Aceptar</strong> <strong><a href="../pdf/condiciones.pdf" class="blue" target="_blank">condiciones</a></strong>
+                    </label>
+                    <button type="submit" onclick=""><img src="../svg/paperPlane.svg">Enviar</button>
+                </form>
+            </div>  
+        </section>
+    </main>
+    <footer>
+        <div id="snkr-footer">
+            <div class="ftr-title">
+                <h4>Compañía</h4>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Nuestros Servicios</a></li>
+                    <li><a href="#">Política Privacidad</a></li>
+                    <li><a href="#">Afiliate</a></li>
+                </ul>
+            </div>
+            <div class="ftr-title">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Preguntas</a></li>
+                    <li><a href="#">Compras</a></li>
+                    <li><a href="#">Envíos</a></li>
+                    <li><a href="#">Afíliate</a></li>
+                    <li><a href="#">Pago</a></li>
+                </ul>
+            </div>
+            <div class="ftr-title">
+                <h4>Tienda</h4>
+                <ul>
+                    <li><a href="#">Ropa</a></li>
+                    <li><a href="#">Zapatos</a></li>
+                    <li><a href="#">Teléfonos</a></li>
+                    <li><a href="#">Pantallas</a></li>
+                </ul>
+            </div>
+            <div class="ftr-title">
+                <h4>Síguenos</h4>
+                <ul id="social-container">
+                    <li>
+                        <a href="#">
+                            <div class="social" id="facebook">
+                                <img src="../svg/facebook.svg">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="social" id="instagram">
+                                <img src="../svg/instagram.svg">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="social" id="x">
+                                <!-- Se hace uso de png, ya que no existe un svg en línea para el nuevo icono de twitter -->
+                                <img src="../svg/X.svg">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="social" id="linkedin">
+                                <img src="../svg/linkedin.svg">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

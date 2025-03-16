@@ -1,0 +1,152 @@
+header{
+    display: flex;
+    background-color: var(--header-black);
+    color: var(--header-white);;
+    justify-content: space-between;
+}
+
+.logo, .access{
+    margin: 15px;
+}
+
+.logo, .access{
+    width: 25%;
+}
+
+.logo > h1{
+    margin-left: 25px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo-container .icon img, .logo-container .play img{
+    position: absolute;
+    width: 100%;
+}
+.logo-container{
+    display: flex;
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.play{
+    display: none;
+    z-index: 999;
+    
+    width: 50px;
+    height: 50px;
+}
+.play img{
+    transform: scale(0.9);
+    justify-self: center;
+}
+.icon{
+    z-index: 9;
+    width: 50px;
+    height: 50px;
+}
+.logo-container:hover .icon{
+    display: none;
+}
+.logo-container:hover .play{
+    display: block;
+    cursor: pointer;
+}
+.orangeText{
+    color: var(--header-orange);
+    font-weight: lighter;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    font-weight: 500;
+}
+nav a{
+    color: var(--header-white);
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    flex-grow: 1;
+}
+
+nav a:hover{
+    color: var(--header-orange);
+    background-color: var(--header-white);
+    box-shadow: 0 0 5px black;
+}
+
+.access{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+.accessButton {
+    display: flex;
+    border: 2px solid var(--header-orange);
+    align-items: center;
+    font-weight: bolder;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.accessButton:hover{
+    background-color: var(--header-orange);
+    color: var(--header-white);
+}
+.accessButton.register{
+    background-color: var(--header-white);
+}
+.accessButton.register:hover{
+    background-color: var(--header-orange);
+}
+.accessButton img{
+    height: 30px;
+    padding: 3px;
+    transition: filter 0.3s;
+}
+.accessButton:hover img{
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 1500px) {
+    header > .access{
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        font-size: 15px;
+    }
+    header > .logo, header > nav{
+        width: 100%;
+        justify-content: center;
+    }
+    header .logo-container{
+        transform: scale(0.8);
+    }
+    header .logo h1{
+        margin-left: 12.5px;
+    }
+    .access{
+        display: none;
+    }
+    header > nav{
+        justify-content: space-between;
+    }
+    header > nav a{
+        padding: 20px 25px;
+    }
+}

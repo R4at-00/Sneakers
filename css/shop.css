@@ -1,0 +1,143 @@
+.sneaker-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 0px 40px 0;
+    gap: 25px;
+}
+
+#sneaker{
+    display: flex;
+    border: 2px solid black;
+    /* margin: 30px; */
+    width: 45%;
+    transition: box-shadow 0.15s ease, filter 0.15s ease;
+    filter: grayscale(1);
+}
+#sneaker:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    filter: grayscale(0);
+}
+
+#sneaker > .imgSearch, #sneaker > div {
+    width: 50%;
+}
+
+#snkr-info{
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#snkr-info > p{
+    font-size: .8rem;
+}
+
+#snkr-info > p{
+    width: 100%;
+    color: #b4b4b4;
+
+    word-spacing: 4px;
+    line-height: 1.25;
+}
+
+.section { 
+    margin: 20px 0;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    background-color: var(--section-gray);
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+#snkr-info >  h1, #snkr-info >  p, #snkr-info > button, #snkr-info > #info{
+    margin-bottom: 20px;
+}
+
+#info, #pricing, #colors{
+    display: flex;
+    align-items: center;
+}
+
+#info{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#colors{
+    margin-right: 20px;
+    gap: 5px;
+}
+
+.discounted{
+    color: red;
+    text-decoration: line-through;
+    font-size: 0.9rem;
+    margin-left: 20px;
+}
+
+.color {
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0 4px black;
+}
+
+.color.black{
+    background-color: black;
+}
+
+.color.yellow{
+    background-color: rgb(221, 180, 0);
+}
+
+.color.red{
+    background-color: red;
+}
+
+
+/* Tablet */
+@media (max-width: 1500px) {
+    #sneaker{
+        flex-direction: column;
+        width: 100%;
+    }
+    #sneaker > .imgSearch, #sneaker > div{
+        width: 100%;
+    }
+    #sneaker > .imgSearch{
+        height: 500px;
+    }
+    main > #sneaker{
+        width: 40%;
+    }
+    header > #access{
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1500px) {
+    .sneaker-container > #sneaker{
+        width: 44%;
+    }
+}
+/* Móvil */
+@media (max-width: 800px) {
+    .sneaker-container{
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 90%;
+    }
+    .sneaker-container > #sneaker{
+        margin-bottom: 20px;
+        width: 90%;
+    }
+}
+
+

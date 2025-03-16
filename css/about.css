@@ -1,0 +1,100 @@
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-container > img{
+    width: 50%;
+    object-fit: cover;
+}
+.info-container .logo{
+    margin: 5px 0;
+}
+
+.info-container .logo-container:hover .icon{
+    display: inline;
+
+}
+
+.info-container .logo h1{
+    margin-left: 15px;
+    font-weight: 300;
+}
+.orangeText{
+    font-weight: 300;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.about-text > h3{
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.italy{
+    font-style: italic;
+    font-weight: 700;
+}
+.italy.gray{
+    color: #a9a6a6;
+}
+
+.icons-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.icons-container .icon{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.icons-container .icon-bg{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    border-radius: 30px;
+}
+.icons-container #instagram .icon-bg{
+    background-color: #e498d6;
+}
+.icons-container #facebook .icon-bg{
+    background-color: #576d9b;
+}
+.icons-container #twitter .icon-bg{
+    background-color: #43c8da;
+}
+
+.icons-container .icon > img{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 30px;
+    filter: grayscale(1);
+    z-index: 9;
+}
+
+.icons-container .icon:hover > img{
+    filter: grayscale(0);
+}
+
+.icons-container .icon:hover .icon-bg{
+    animation: iconExpand 0.8s linear 0s infinite;
+}
+
+@media (max-width: 800px) {
+    .info-container{
+        flex-direction: column;
+    }
+    .info-container > img{
+        width: 100%;
+    }
+}
