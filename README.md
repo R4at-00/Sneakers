@@ -1,10 +1,11 @@
+[Enlace a la página](https://r4at-00.github.io/Sneakers/html/main.html)
 # Sneakers
 
 <p style="color:gray;">Diego Francisco Padilla Villar 1ºDAM A<p>
 
 Se trata de un proyecto realizado para la evaluación de los conocimientos aprendidos de HTML y CSS en el módulo LND. A continuación, pasaremos a detallar lo que vendría siendo la estructuración del proyecto y los cambios añadidos de cara a alcanzar la máxima nota.
 
-*Por otra parte, el código está completamente documentado, para que las decisiones elegidas en la etapa de desarrollo sean totalmente legibles para personas ajenas al equipo.*
+*Por otra parte, el código está documentado, para que las decisiones elegidas en la etapa de desarrollo sean totalmente legibles para personas ajenas al equipo.*
 
 ## Estructura del proyecto
 

@@ -63,7 +63,7 @@ footer a {
 #facebook.social:hover, #linkedin.social:hover{
     background-color: #415897;
 }
-
+/*Se usa un gradiente de colores, estableciendo hasta dónde va a acaparar cada color en el fondo.*/
 #instagram.social:hover{
     background: linear-gradient(90deg, #821882 2%, #a3326f 20%, #da2f2f 65%, #d69d32);
     border-radius:25px;

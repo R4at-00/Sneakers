@@ -31,7 +31,7 @@ header{
     width: 50px;
     height: 50px;
 }
-
+/*El boton de play se encuentra invisible por defecto*/
 .play{
     display: none;
     z-index: 999;
@@ -43,11 +43,14 @@ header{
     transform: scale(0.9);
     justify-self: center;
 }
+
 .icon{
     z-index: 9;
     width: 50px;
     height: 50px;
 }
+
+/*Al pasar el raton por encima, el icono del logo desaparece y el botón de play se vuelve visible*/
 .logo-container:hover .icon{
     display: none;
 }
@@ -115,6 +118,8 @@ nav a:hover{
     padding: 3px;
     transition: filter 0.3s;
 }
+
+/* Aplicamos un filtro, primero estableciendo a negro el icono para posteriormente invertirlo y así conseguir el color blanco. */
 .accessButton:hover img{
     filter: brightness(0) invert(1);
 }

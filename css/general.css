@@ -16,6 +16,8 @@
     --icon-gray: #505155;
     --section-gray: #dadada;
 }
+
+/* Decidí hacer un flexbox para el body, de esta manera el footer siempre se mantendrá en la parte inferior de la página. */
 body {
     background-color: var(--header-white);
     display: flex;
@@ -28,6 +30,7 @@ a {
     color: black;  
 }
 
+/* El boton 'ADD TO CART' se utiliza en varias páginas, por lo que se encuentra en general.css */
 .btnNegro{
     padding: 9px;
     display: flex;
@@ -59,6 +62,9 @@ a {
     filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(-20deg);
 }
 
+
+/* Debido a que en varias páginas se encuentra la búsqueda con lupa de imágenes, decidí 
+alojar dicha lógica en la clase genérica. */
 .imgSearch{
     position: relative;
     overflow: hidden;
@@ -88,6 +94,9 @@ a {
     cursor: pointer;
 }
 
+
+/*El formato de la página contacto y sobre nosotros es parcialmente parecida, por lo que
+generalicé hasta cierto punto su estructura en css.*/
 .info{
     margin: 0 auto;
     width: 98%;
@@ -116,6 +125,8 @@ a {
     width: 97%;
 }
 
+/*Incluyo el estilo del salto de linea de inicio y la tienda en la clase genérica.*/
+
 .line-br{
     background-color: #bfbfc3;
     height: 3px;
@@ -134,6 +145,9 @@ a {
         transform: scale(1);
     }
 }
+
+/*Decidí crear dos animaciones para cada imagen del slider, 
+de tal manera que ambas comprenden 200 unidades de espacio con un desfase de 100 unidades*/
 
 @keyframes sliderMovement1{
     0%{

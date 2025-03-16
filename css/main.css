@@ -24,6 +24,7 @@
 .slider-card:nth-child(odd){
     animation: sliderMovement1 15s linear 0s infinite;
 }
+/*Se añade un delay para que no aparezcan al mismo tiempo*/
 .slider-card:nth-child(even){
     animation: sliderMovement2 15s linear 7.5s infinite;
 }
@@ -33,8 +34,10 @@
 }
 
 .slider-card > img{
+    /* Se hace uso de flex:auto para que la imagen se ajuste al tamaño del contenedor */
     flex: auto;
     width: 30%;
+    /* En este proyecto se ha decidido utilizar de forma generalizada object-fit para que la imagen nunca se deforme */
     object-fit: cover;
 }
 
@@ -95,7 +98,6 @@ section .subtitulo{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid black; */
     width: 55%;
 }
  .imgContainer .imgSearch{

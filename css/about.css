@@ -1,3 +1,6 @@
+
+/* Sobreescribimos la clase generica info(general.css), orange-text(header.css) e info-container(general.css) 
+para que se ajuste al contenido de la página */
 .info{
     display: flex;
     flex-direction: column;
@@ -13,7 +16,6 @@
 
 .info-container .logo-container:hover .icon{
     display: inline;
-
 }
 
 .info-container .logo h1{
@@ -23,6 +25,8 @@
 .orangeText{
     font-weight: 300;
 }
+
+/* Contenemos la información principal de la página en about-text */
 
 .about-text{
     display: flex;
@@ -43,6 +47,8 @@
 .italy.gray{
     color: #a9a6a6;
 }
+
+/* Los iconos de las redes sociales se guardan en un contenedor con la clase icons-container */
 
 .icons-container{
     display: flex;

@@ -1,10 +1,13 @@
+/* Sobreescribimos la clase generica info-container(general.css) */
 .info-container{
     width: 95%;
 }
 
-#about-text{
+.contact-text{
     width: 100%;
 }
+
+/* Realizamos clases para estilizar el texto contenido en .contact-text */
 .titulo{
     font-weight: 1000;
 }
@@ -53,7 +56,6 @@
     display: flex;
     justify-content: center;
     position: relative;
-    /* padding: 5px; */
 }
 
 .social-container a{
@@ -100,7 +102,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* padding: 0 40px; */
     gap:12px;
 }
 
