@@ -100,3 +100,6 @@ Hemos añadido los siguientes cambios:
          alert("NO HAY STOCK");
      }
      ```
+   - El icono a la pestaña fue añadido:
+   
+     ![Tab icon](img/readme/tab-icon.png) 
