@@ -101,5 +101,17 @@ Hemos añadido los siguientes cambios:
      }
      ```
    - El icono a la pestaña fue añadido:
-   
+
      ![Tab icon](img/readme/tab-icon.png) 
+
+   - Cuando pasas el ratón por encima del slider, se pausará:
+
+     ![Slider pause](img/readme/slider-pause.gif)
+
+     Esto ocurre ya que fue implementada esta línea de código:
+
+     ```css
+     .slider:hover .slider-card{
+          animation-play-state: paused;
+     }
+     ```

@@ -29,6 +29,7 @@
     animation: sliderMovement2 15s linear 7.5s infinite;
 }
 
+/*Cuando pasemos el ratón por encima, el slider se pausará*/
 .slider:hover .slider-card{
     animation-play-state: paused;
 }
