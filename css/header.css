@@ -33,9 +33,10 @@ header{
 }
 /*El boton de play se encuentra invisible por defecto*/
 .play{
-    display: none;
+    opacity: 0;
     z-index: 999;
-    
+    position: absolute;
+    transition: opacity 0.3s;
     width: 50px;
     height: 50px;
 }
@@ -48,14 +49,15 @@ header{
     z-index: 9;
     width: 50px;
     height: 50px;
+    transition: opacity 0.2s;
 }
 
 /*Al pasar el raton por encima, el icono del logo desaparece y el botón de play se vuelve visible*/
 .logo-container:hover .icon{
-    display: none;
+    opacity: 0;
 }
 .logo-container:hover .play{
-    display: block;
+    opacity: 1;
     cursor: pointer;
 }
 .orangeText{
